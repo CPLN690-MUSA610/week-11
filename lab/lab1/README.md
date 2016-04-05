@@ -67,12 +67,12 @@ I wanted to see where thefts are occurring, I might use the following:
 ```sql
 SELECT * FROM crimes_table WHERE crime_type = 'theft';
 ```
-Write your queries down - we'll be using them later.
+Write your queries down - we'll be using them later.  
 
-[CartoDB SQL query
+- [CartoDB SQL query
 docs](http://academy.cartodb.com/courses/sql-postgis/intro-to-sql-and-postgis/)
-[Third party SQL WHERE docs](http://www.w3schools.com/sql/sql_where.asp)
-[PostGIS reference](http://postgis.net/docs/reference.html) (advanced)
+- [Third party SQL WHERE docs](http://www.w3schools.com/sql/sql_where.asp)
+- [PostGIS reference](http://postgis.net/docs/reference.html) (advanced)
 
 
 ## Task 4 - filters interface
