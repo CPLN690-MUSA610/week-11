@@ -34,6 +34,8 @@ e.g. "How many airports exist in each country?"
 
 You can use any datasets you like, but be sure to explore the `Data Library`
 (located at: {your-username}.cartodb.com/dashboard/datasets/library).
+You can also find datasets that others have created or used through
+CartoDB's gallery.
 
 Note: Most likely, one of the datasets should contain polygons so that a spatial
 join can meaningfully be carried out.
@@ -70,6 +72,7 @@ Write your queries down - we'll be using them later.
 [CartoDB SQL query
 docs](http://academy.cartodb.com/courses/sql-postgis/intro-to-sql-and-postgis/)
 [Third party SQL WHERE docs](http://www.w3schools.com/sql/sql_where.asp)
+[PostGIS reference](http://postgis.net/docs/reference.html) (advanced)
 
 
 ## Task 4 - filters interface
@@ -90,10 +93,12 @@ to use CartoDB to serve tiles for your application (which we'll cover
 in lab 2).
 
 In the map view, use the 'wizard' interface to visualize the spatial join
-you carried out in step 1. For instance, if i joined airport point
+you carried out in step 1. For instance, if I joined airport point
 data onto country polygons so as to produce a count of airports within
 each country, a choropleth coloring the various quantiles could quickly
-convey differences between the countries.
+convey differences between the countries. Try to make this meaningful -
+categorical colorings are often more useful than choropleth so think
+about what your data can meaningfully tell you.
 
 
 ## Task 6 - playing with CartoCSS
