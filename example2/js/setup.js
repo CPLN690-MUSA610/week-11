@@ -1,5 +1,5 @@
 var INSERT = true;
-var APIKEY = "9799226e0f77d90e5731f49ba5c6555241ebbfa0";
+var APIKEY = "";
 
 // Leaflet map setup
 var map = L.map('map', {
