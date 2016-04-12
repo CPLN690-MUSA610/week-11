@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h1>Pizza Restaurant Ratings</h1>
+            <div class="input-group">
+              <input id="name" type="text"
+                     class="form-control"
+                     placeholder="Restaurant"
+                     disabled>
+              <input id="rating" type="number"
+                     class="form-control"
+                     min="1" max="5"
+                     placeholder="Rating (1 - 5)"
+                     disabled>
+              <input id="lat" type="hidden">
+              <input id="lng" type="hidden">
+              <button id="submit"
+                      class="btn btn-primary"
+                      disabled>
+                Submit review
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <ul id="project-list" class="list-group">
+        </ul>
+      </div>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map">
+      <div id="time-window"></div>
+    </div>
+    <!-- Javascript Imports -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.js"></script>
+    <script src="js/setup.js"></script>
+  </body>
+</html>
+
